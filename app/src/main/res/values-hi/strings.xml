@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="todo">TODO</string>
+    <string name="welcome">Welcome</string>
+    <string name="to">to</string>
+    <string name="quiz_app">Quiz App</string>
+    <string name="next">अगला -></string>
+    <string name="a">(ए)</string>
+    <string name="b">(बी)</string>
+    <string name="c">(सी)</string>
+    <string name="d">(डी)</string>
+    <string name="_1">1.</string>
+    <string name="setting">सेटिंग</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="try_again">पुनः प्रयास करें</string>
+    <string name="total_question">कुल सवाल</string>
+
+</resources>

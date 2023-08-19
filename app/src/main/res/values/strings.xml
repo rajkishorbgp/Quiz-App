@@ -9,4 +9,9 @@
     <string name="b">(B)</string>
     <string name="c">(C)</string>
     <string name="d">(D)</string>
+    <string name="_1">1.</string>
+    <string name="setting">Setting</string>
+    <string name="change_language">Change Language</string>
+    <string name="try_again">Try Again</string>
+    <string name="total_question">Total Question</string>
 </resources>

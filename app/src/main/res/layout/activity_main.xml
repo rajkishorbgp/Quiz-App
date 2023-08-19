@@ -9,20 +9,57 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="@string/app_name"
         app:titleTextColor="@color/white"
         android:background="#6D443C"/>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:contentDescription="@string/todo"
-        app:srcCompat="@drawable/quiz" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/quiz" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#6D443C">
+
+            <TextView
+                android:id="@+id/totalQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:text="@string/total_question"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -43,7 +80,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
-                android:text="1."
                 android:gravity="center_vertical"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -56,8 +92,7 @@
                 android:layout_marginStart="5dp"
                 android:textColor="#fff"
                 android:layout_marginEnd="5dp"
-                android:textSize="20sp"
-                android:text="Wait a few seconds !!" />
+                android:textSize="20sp" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -66,10 +101,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
 
         <LinearLayout
-            android:layout_width="60dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_marginTop="10dp"
@@ -131,7 +167,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColor="@color/white"
-                    android:text="wait"
                     android:background="@drawable/rounded_button"/>
 
                 <RadioButton
@@ -140,7 +175,6 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="15dp"
                     android:textColor="@color/white"
-                    android:text="wait"
                     android:background="@drawable/rounded_button" />
 
                 <RadioButton
@@ -148,7 +182,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="15dp"
-                    android:text="wait"
                     android:textColor="@color/white"
                     android:background="@drawable/rounded_button"/>
 
@@ -157,17 +190,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="15dp"
-                    android:text="wait"
                     android:textColor="@color/white"
                     android:background="@drawable/rounded_button" />
 
             </RadioGroup>
 
         </LinearLayout>
-
-
-
-
 
     </LinearLayout>
 
