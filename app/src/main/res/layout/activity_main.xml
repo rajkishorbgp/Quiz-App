@@ -47,7 +47,6 @@
                 android:gravity="center_vertical"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
-
             <TextView
                 android:id="@+id/question"
                 android:layout_width="match_parent"
@@ -59,152 +58,118 @@
                 android:layout_marginEnd="5dp"
                 android:textSize="20sp"
                 android:text="Wait a few seconds !!" />
-
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#5B3933"
-        android:layout_margin="20dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
 
-        <RadioGroup
-            android:id="@+id/optionsRadioGroup"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="60dp"
             android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/a"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/d"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/optionsRadioGroup"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
-                <LinearLayout
+                <RadioButton
+                    android:id="@+id/optionA"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:textColor="@color/white"
+                    android:text="wait"
+                    android:background="@drawable/rounded_button"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="(A)"
-                            android:textColor="@color/white"
-                            android:textSize="20sp"
-                            android:gravity="center_vertical"
-                            android:layout_marginStart="5dp"/>
-
-                        <RadioButton
-                            android:id="@+id/option_a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:text="wait"
-                            android:layout_marginStart="2dp"
-                            android:background="@drawable/rounded_button"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="(c)"
-                            android:textColor="@color/white"
-                            android:textSize="20sp"
-                            android:gravity="center_vertical"
-                            android:layout_marginStart="5dp"/>
-
-                        <RadioButton
-                            android:id="@+id/option_c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:text="wait"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="5dp"
-                            android:background="@drawable/rounded_button"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
+                <RadioButton
+                    android:id="@+id/optionB"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:text="wait"
+                    android:background="@drawable/rounded_button" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
+                <RadioButton
+                    android:id="@+id/optionC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:text="wait"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="(B)"
-                            android:textColor="@color/white"
-                            android:textSize="20sp"
-                            android:gravity="center_vertical"
-                            android:layout_marginStart="5dp"/>
+                <RadioButton
+                    android:id="@+id/optionD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:text="wait"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button" />
 
-                        <RadioButton
-                            android:id="@+id/option_b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:text="wait"
-                            android:layout_marginStart="2dp"
-                            android:background="@drawable/rounded_button"/>
+            </RadioGroup>
 
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="(D)"
-                            android:textColor="@color/white"
-                            android:textSize="20sp"
-                            android:gravity="center_vertical"
-                            android:layout_marginStart="5dp"/>
-
-                        <RadioButton
-                            android:id="@+id/option_d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:text="wait"
-                            android:layout_marginEnd="5dp"
-                            android:layout_marginStart="2dp"
-                            android:background="@drawable/rounded_button"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </RadioGroup>
+        </LinearLayout>
 
 
 
-    </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
 
 
     <Button
@@ -213,6 +178,5 @@
         android:layout_height="wrap_content"
         android:text="@string/next"
         android:layout_gravity="center"/>
-
 
 </LinearLayout>

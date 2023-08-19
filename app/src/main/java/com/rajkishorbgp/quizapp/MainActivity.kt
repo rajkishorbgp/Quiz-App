@@ -54,46 +54,29 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.optionsRadioGroup.setOnCheckedChangeListener { group, checkedId ->
-            when (checkedId) {
-                0 -> {
-                    Toast.makeText(this,"A",Toast.LENGTH_SHORT).show()
-                }
-                1 -> {
-                    Toast.makeText(this,"B",Toast.LENGTH_SHORT).show()
-                }
-                2 -> {
-                    android.widget.Toast.makeText(this,"C", android.widget.Toast.LENGTH_SHORT).show()
-                }
-                3 -> {
-                    Toast.makeText(this,"D",Toast.LENGTH_SHORT).show()
-                }
+        binding.optionA.setOnClickListener{
+            binding.optionA.text.toString().let { answer ->
+                countScore(answer)
             }
         }
 
-//        binding.optionA.setOnClickListener{
-//            binding.optionA.text.toString().let { answer ->
-//                countScore(answer)
-//            }
-//        }
-//
-//        binding.optionB.setOnClickListener{
-//            binding.optionB.text.toString().let { answer ->
-//                countScore(answer)
-//            }
-//        }
-//
-//        binding.optionC.setOnClickListener{
-//            binding.optionC.text.toString().let { answer ->
-//                countScore(answer)
-//            }
-//        }
-//
-//        binding.optionD.setOnClickListener{
-//            binding.optionD.text.toString().let { answer ->
-//                countScore(answer)
-//            }
-//        }
+        binding.optionB.setOnClickListener{
+            binding.optionB.text.toString().let { answer ->
+                countScore(answer)
+            }
+        }
+
+        binding.optionC.setOnClickListener{
+            binding.optionC.text.toString().let { answer ->
+                countScore(answer)
+            }
+        }
+
+        binding.optionD.setOnClickListener{
+            binding.optionD.text.toString().let { answer ->
+                countScore(answer)
+            }
+        }
 
         binding.next.setOnClickListener {
             count++

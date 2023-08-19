@@ -5,4 +5,8 @@
     <string name="to">to</string>
     <string name="quiz_app">Quiz App</string>
     <string name="next">next -></string>
+    <string name="a">(A)</string>
+    <string name="b">(B)</string>
+    <string name="c">(C)</string>
+    <string name="d">(D)</string>
 </resources>
